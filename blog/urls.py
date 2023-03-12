@@ -1,0 +1,9 @@
+from django.urls import path
+from .views import BlogsAPIView, BlogAPIView
+
+app_name = 'blog'
+
+urlpatterns = [
+    path('', BlogsAPIView.as_view()),
+    path('<int:pk>/', BlogAPIView.as_view())
+]
