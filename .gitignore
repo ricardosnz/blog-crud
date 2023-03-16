@@ -45,7 +45,6 @@ MANIFEST
 blogrevisar.py
 index.py
 inicialsoloserpe.py
-build/
 templates/
 revisar.py
 
