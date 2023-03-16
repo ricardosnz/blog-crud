@@ -1,9 +1,9 @@
 from django.urls import path
-from .views import BlogsAPIView, BlogAPIView
+from .views import BlogsAPIView, BlogAPIView, BlogListCreateAPIView
 
 app_name = 'blog'
 
 urlpatterns = [
-    path('', BlogsAPIView.as_view()),
-    path('<int:pk>/', BlogAPIView.as_view())
+    path('', BlogsAPIView.as_view(), name='blogs'),
+    path('<int:pk>/', BlogAPIView.as_view(), name='blog'),
 ]
